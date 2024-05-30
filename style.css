@@ -1,0 +1,71 @@
+        body {
+            background-image: url('/Assighment_SMIT/img/Pic.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+      .box {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .form {
+            margin: 20px 0;
+        }
+        .inputbox {
+            position: relative;
+            margin-bottom: 30px; /* Increased margin to prevent touching the border */
+        }
+        .inputbox input {
+            width: calc(100% - 20px); /* Adjust width to accommodate padding */
+            padding: 10px;
+            margin: 5px;
+            background: #fff;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .inputbox span {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            transition: 0.5s;
+            pointer-events: none;
+            color: #888;
+        }
+        .inputbox input:focus ~ span,
+        .inputbox input:valid ~ span {
+            top: -20px;
+            left: 10px;
+            color: #2196F3;
+            font-size: 12px;
+        }
+        .sub {
+            background: #2196F3;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .edit, .delete {
+            cursor: pointer;
+            color: #2196F3;
+        }
